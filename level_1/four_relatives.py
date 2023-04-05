@@ -16,10 +16,7 @@ class User:
         self.birth_date = birth_date
         
     def is_relatve_to(self, other_user):
-        if self.last_name == other_user.last_name:
-            return True
-        else:
-            return False
+        return self.last_name == other_user.last_name
 
 
 if __name__ == "__main__":
